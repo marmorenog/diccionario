@@ -30,8 +30,11 @@ print (persona)
 persona["mascota"] = "Cholito" # es para agregar el valor al diccionario , si la llave no existe la agrega!
 persona["edad"] = 26 #si la llave existe modifica el valor 
 persona["edad"] +=1
-
+persona.pop("altura")
+print(persona.get("edad")) #obtiene la información, para evitar que el programa se caiga 
 # edad = int(input("Ingrese la edad: "))
 #persona["edad"]=edad
 
+print(len(persona)) #cuantas parejas de llave valor-existen!
+     
 print(persona)
